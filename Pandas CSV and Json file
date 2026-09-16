@@ -1,0 +1,33 @@
+#json data
+
+df = pd.read_json("employee_data.json")
+print(df, type(df))
+
+
+
+#CSV data
+
+#CSV data
+
+df = pd.read_csv("employee_data.csv")
+
+print(df, type(df))
+
+
+
+
+#Methods 
+# print(df.head()) #starting 5 rows
+# df.head()
+
+# df.tail(2)
+# df.sample(5)
+
+# df.info()
+
+# df.shape
+
+df.describe()
+
+df.columns
+df.nunique()
