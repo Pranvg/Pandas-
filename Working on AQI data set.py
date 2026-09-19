@@ -78,10 +78,21 @@ aqi_data = df.query("aqi > @aqi_val & temperature > 30") [["city", "country", "a
 aqi_data
 
 
+date_str = pd.Series([pd.to_datetime("2026-12-31")])
+type(date_str.dtypes)
 
 
 
+df["gender"].str.capitalize()
 
+
+df["name"].str.split(" ")
+
+#pranav@gmail.com
+#shradha@gmail.com
+#df["name"].str.split(" ")
+
+df["country"].str.contains("india", case=False)
 
 
 
